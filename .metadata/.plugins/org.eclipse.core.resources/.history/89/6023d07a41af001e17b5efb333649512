@@ -1,0 +1,14 @@
+package test.practicaUno;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class Test_BonusTrack1Test {
+
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+
+}

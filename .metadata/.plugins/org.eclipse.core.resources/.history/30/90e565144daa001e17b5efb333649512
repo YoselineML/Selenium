@@ -1,0 +1,9 @@
+package org.educacionIT.cursoSelenium.claseCuatro;
+
+import org.testng.annotations.Test;
+
+public class AutomationTest {
+  @Test
+  public void f() {
+  }
+}

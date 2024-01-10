@@ -1,0 +1,36 @@
+package test.practicaUno;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Test_BonusTrack1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String url = "https://www.saucedemo.com/";
+		String username = "user-name";
+		String password = "password";
+		String loginButton = "login-button";
+		
+		
+		WebDriver browser = new ChromeDriver ();
+		
+		try {
+		
+		browser.get(url);
+		browser.manage().window().maximize();
+		browser.findElement(By.id(username)).sendKeys("yoseline");
+		browser.findElement(By.id(password)).sendKeys("12345ym");
+		browser.findElement(By.id(loginButton)).click();
+		
+		}finally {
+			browser.quit();
+		}
+		
+		
+
+	}
+
+}

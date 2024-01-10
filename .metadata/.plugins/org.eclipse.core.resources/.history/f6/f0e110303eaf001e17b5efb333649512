@@ -1,0 +1,12 @@
+package test.practicaUno;
+
+public class Test_BonusTrack1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		WebDriver browser = new ChromeDriver();
+
+	}
+
+}

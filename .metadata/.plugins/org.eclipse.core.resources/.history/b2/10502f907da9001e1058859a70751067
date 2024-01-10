@@ -1,0 +1,14 @@
+package org.educacionit.cursoSelenium.clase.dos.test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class AutomationPracticeTest {
+
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+
+}

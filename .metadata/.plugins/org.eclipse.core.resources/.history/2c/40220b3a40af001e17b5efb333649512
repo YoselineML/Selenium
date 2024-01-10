@@ -1,0 +1,22 @@
+package test.practicaUno;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Test_BonusTrack1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String url = "https://www.saucedemo.com/";
+		
+		
+		WebDriver browser = new ChromeDriver ();
+		
+		browser.get(url);
+		browser.manage().window().maximize();
+		
+		
+
+	}
+
+}

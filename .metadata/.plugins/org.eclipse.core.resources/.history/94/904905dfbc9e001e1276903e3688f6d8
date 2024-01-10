@@ -1,0 +1,17 @@
+package org.EducacionIT.CursoSelenium.ClaseUno.tests;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class CalculadoraTest {
+
+	@Test
+	void testSumar() {
+		int a = 10;
+		int b = 15;
+		int res = a + b;
+		
+	}
+
+}

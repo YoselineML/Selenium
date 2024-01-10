@@ -1,0 +1,39 @@
+package org.educacionit.cursoSelenium.clase.dos;
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.*;
+
+public class program {
+
+	public static void main(String[] args) throws Exception {
+		// TODO Auto-generated method stub
+		System.out.println("Bienvenido clase dos");
+		WebDriver WebBrowser = new ChromeDriver();
+		try {
+			WebBrowser.get("http://www.automationpractice.pl/index.php");
+			// Busco un elemento por ID
+			//// opcion 1 - guardo lo que me devuelve el metodo en una variable
+			//// WebElement inputSearch = WebBrowser.findElement(By.id("search_query_top"));
+			//// inputSearch.sendKeys("shrit");
+
+			//// Opcion 2
+			WebBrowser.findElement(By.id("search_query_top")).sendKeys("shrit");
+
+			// Busco un elemento por name
+			//// OPCION 1: encuentro el elemento
+			//// WebElement botonBuscar = WebBrowser.findElement(By.name("submit_search"));
+			//// botonBuscar.click();
+
+			//// Opcion 2 : que pasa si el elemento no existe
+			WebElement botonBuscar = WebBrowser.findElement(By.name("submit_search_noexiste"));
+			botonBuscar.click();
+
+			// Espero antes de cerrar el buscador
+			Thread.sleep(15000);
+		} finally {
+			WebBrowser.quit();
+
+		}
+	}
+
+}
